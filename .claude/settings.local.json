@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwrite",
+      "Bash(npm view *)",
+      "Bash(python3 -c \"import json,sys; v=[x for x in json.load\\(sys.stdin\\) if not x.startswith\\('0.'\\) or int\\(x.split\\('.'\\)[1]\\) >= 29]; print\\(v[-5:]\\)\")",
+      "Bash(python3 -c \"import json,sys; versions=json.load\\(sys.stdin\\); recent=[v for v in versions if v >= '0.29.0']; print\\(recent[-5:]\\)\")",
+      "Bash(python3 -c \"import json,sys; v=[x for x in json.load\\(sys.stdin\\) if x.startswith\\('6.'\\) and 'beta' not in x and 'rc' not in x and 'alpha' not in x]; print\\(v[-5:]\\)\")",
+      "Bash(python3 -c \"import json,sys; v=json.load\\(sys.stdin\\); print\\(v[-5:]\\)\")",
+      "Bash(python3 -c \"import json,sys; v=json.load\\(sys.stdin\\); recent=[x for x in v if x >= '7.29.0']; print\\(recent[-3:]\\)\")",
+      "Bash(python3 -c \"import json,sys; v=json.load\\(sys.stdin\\); recent=[x for x in v if x >= '13.2.0']; print\\(recent[-3:]\\)\")",
+      "Bash(npm test *)"
+    ]
+  }
+}
